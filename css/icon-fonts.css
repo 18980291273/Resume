@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?kfhnk7');
+    src:  url('../fonts/icomoon.eot?kfhnk7#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?kfhnk7') format('truetype'),
+      url('../fonts/icomoon.woff?kfhnk7') format('woff'),
+      url('..//icomoon.svg?kfhnk7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-moon{
+    color: #AAAAAA;
+    font-size: 28px;
+  }
+
+  .icon-moon-two{
+    color: white;
+    font-size: 25px;
+  }
+
+  .icon-moon-three{
+    color: #F4D03F;
+    font-size: 50px;
+  }
+
+  .icon-moon-four{
+    color: #F4D03F;
+    font-size: 30px;
+  }
+
+  .icon-moon-five{
+    color: #FFFFFF;
+    font-size: 20px;  
+  }
+  
+  .icon-search:before {
+    content: "\e986";
+    color: #F4D03F;
+    font-size: 20px;
+  }
+  .icon-renren:before {
+    content: "\e905";
+  }
+  
+  .icon-personal_video:before {
+    content: "\e901";
+  }
+  
+  .icon-quill:before {
+    content: "\e907";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-location:before {
+    content: "\e947";
+  }
+  .icon-users:before {
+    content: "\e972";
+  }
+  .icon-trophy:before {
+    content: "\e99e";
+  }
+  .icon-rocket:before {
+    content: "\e9a5";
+  }
+  .icon-smile:before {
+    content: "\e9e1";
+  }
+  .icon-checkbox-checked:before {
+    content: "\ea52";
+  }
+  .icon-radio-checked:before {
+    content: "\ea54";
+  }
+  .icon-embed2:before {
+    content: "\ea80";
+  }
+  .icon-sina-weibo:before {
+    content: "\ea9a";
+  }
+  .icon-angle-double-down:before {
+    content: "\e900";
+  }
+  .icon-wechat:before {
+    content: "\e904";
+  }
+  .icon-qq:before {
+    content: "\e903";
+  }

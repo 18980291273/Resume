@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子简历3.0版本 </title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icon-fonts.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- .navbar——设置nav元素为导航条组件； -->
+        <!-- .navbar-fixed-top——设置导航条组件固定在顶部； -->
+        <!-- .my-nav-style-自定义样式 导航动画效果: transition: all .5s linear; -->
+        <nav class="navbar navbar-fixed-top my-nav-style">
+            <div class="container">
+                <!-- .navbar-header——主要指定div元素为导航条组件包裹品牌图标及折叠切换按钮； -->
+                <div class="navbar-header">
+                    <!-- 定义折叠切换按钮-小屏幕显示 -->
+                    <!-- .navbar-toggle——设置button元素为导航条组件的切换钮； -->
+                    <!-- data-toggle="collapse"-折叠属性 -->
+                    <!-- data-target="#my-navbar-collapse"-折叠目录：#nav-collapse表示作用于id="nav-collapse"元素 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#my-navbar-collapse">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </button>
+                </div>
+
+                <!-- .collapse——设置button元素为在视口小于768px时才显示；
+                 collapse的作用是为了当浏览器的窗口宽度小于768px的时候，将设置为collapse样式的div元素内的所有其它元素都折叠起来，以一个列表的形式显示 -->
+                <!-- .navbar-collapse——设置div元素为导航条组件各列表项的父元素； -->
+                <!-- .navbar-right——设置导航条内元素向右对齐； -->
+                <div class="collapse navbar-collapse navbar-right" id="my-navbar-collapse">
+                    <!-- .nav——设置导航条组件样式； -->
+                    <!-- .navbar-nav——设置导航条组件样式水平排列； -->
+                    <ul id="nav" class="nav navbar-nav">
+                        <!-- 设置锚点顺滑跳转 -->
+                        <li><a href="#data-content">基本资料</a></li>
+                        <li><a href="#experience">项目经验</a></li>
+                        <li><a href="#professional">专业技能</a></li>
+                        <li><a href="#life">工作经历</a></li>
+                        <li><a href="#evaluation">自我评价</a></li>
+                        <li><a href="#contact">联系方式</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-title">
+            <h1>简历-<span>轩轩</span></h1>
+            <h3>享受科技，热爱生活</h3>
+            <div class="decline">
+                <span class="icons icon-angle-double-down icon-moon-four"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- data-content 资料 -->
+    <div id="data-content" class="data-content">
+        <div class="container">
+            <div class="general-title text-color-one">
+                <h1><span>资料</span></h1>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <span class="icon-moon icon-personal_video"></span>
+                    <h3>个人信息</h3>
+                    <p>英文名: D 性别：男 <br>年龄: 21+ 籍贯：四川 </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <span class="icon-moon icon-embed2"></span>
+                    <h3>专业学历</h3>
+                    <p>移动应用开发</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <span class="icon-moon icon-rocket"></span>
+                    <h3>毕业学校</h3>
+                    <p>毕业学校：雨果学院</p>
+                    <p>学习技能：编程</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <span class="icon-moon icon-radio-checked"></span>
+                    <h3>联系方式</h3>
+                    <p>QQ：1317237527</p>
+                    <p>邮箱：1317237527@qq.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- experience 项目经验 -->
+    <div id="experience" class="experience">
+        <div class="container">
+            <div class="general-title text-color-two text-center">
+                <h1>项目 <span>经验</span></h1>
+                <hr />
+                <p>主要涉及电商，金融，教育领域，包括PC端，手机端，微信端，移动APP端等等</p>
+                <div class="btn-group">
+                    <a href="javascript:void(0);" data-filter=".all" class="btn-active all">所有</a>&nbsp;|&nbsp;
+                    <a href="javascript:void(0);" data-filter=".pc" class="pc">pc端</a>&nbsp;|&nbsp;
+                    <a href="javascript:void(0);" data-filter=".mobile" class="mobile">移动端</a>&nbsp;|&nbsp;
+                    <a href="javascript:void(0);" data-filter=".responsive" class="responsive">响应式</a>
+                </div>
+            </div>
+
+            <!-- row为bootstrap定义的类，grid用于iso过滤定义的类 -->
+            <div class="row grid">
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all mobile">
+                    <div class="images">
+                        <img src="./img/portfolio/02.jpg" alt="图2">
+                        <div class="science-text">
+                            <h4>娱乐门户</h4>
+                            <p>技术：HTML+CSS+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all pc">
+                    <div class="images">
+                        <img src="./img/portfolio/03.jpg" alt="图3">
+                        <div class="science-text">
+                            <h4>大数据</h4>
+                            <p>技术：Bootstrap+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all mobile responsive">
+                    <div class="images">
+                        <img src="./img/portfolio/04.jpg" alt="图4">
+                        <div class="science-text">
+                            <h4>外卖小程序</h4>
+                            <p>技术：Bootstrap+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all pc">
+                    <div class="images">
+                        <img src="./img/portfolio/05.jpg" alt="图5">
+                        <div class="science-text">
+                            <h4>订单系统</h4>
+                            <p>技术：HTML+CSS+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all mobile responsive">
+                    <div class="images">
+                        <img src="./img/portfolio/06.jpg" alt="图6">
+                        <div class="science-text">
+                            <h4>港台音乐</h4>
+                            <p>技术：Bootstrap+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all pc">
+                    <div class="images">
+                        <img src="./img/portfolio/07.jpg" alt="图7">
+                        <div class="science-text">
+                            <h4>个人博客</h4>
+                            <p>技术：HTMl+CSS+JS+Wordpress</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all pc mobile">
+                    <div class="images">
+                        <img src="./img/portfolio/08.jpg" alt="图8">
+                        <div class="science-text">
+                            <h4>电信189邮箱</h4>
+                            <p>技术：Bootstrap+JQuery</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 my-style all pc">
+                    <div class="images">
+                        <img src="./img/portfolio/01.jpg" alt="图1">
+                        <div class="science-text">
+                            <h4>雨果学院后台中心</h4>
+                            <p>技术：html+css+js</p>
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- professional 专业技能 -->
+    <div id="professional" class="professional">
+        <div class="container">
+            <div class="general-title text-color-two">
+                <h1><span>专业</span> 技能</h1>
+                <hr />
+            </div>
+
+            <div class="professional-content row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="./img/about.png" alt="电脑">
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 right-text">
+                    <div class="right-item">
+                        <i class="icon-moon-two icon-quill"></i>
+                        <div class="item-text">
+                            <h4>前端</h4>
+                            <p>熟练使用HTML/HTML5，CSS/CSS3等网页制作技术. 熟悉页面架构和布局，DIV+CSS响应式布局的HTML代码编写.
+                                熟练使用jquery.js，zepto.js，bootstrap等框架进行页面的开发. 掌握reactjs，vuejs等前端新技术.</p>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <i class="icon-moon-two icon-users"></i>
+                        <div class="item-text">
+                            <h4>后端</h4>
+                            <p>Java、Python、PHP、ruby、C、C++、Mysql</p>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <i class="icon-moon-two icon-checkbox-checked"></i>
+                        <div class="item-text">
+                            <h4>运维</h4>
+                            <p>Linux、Nginx......</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dynamic-number 动态数字 -->
+    <div id="dynamic-number" class="dynamic-number">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 num-item">
+                    <i class="icon-moon-three icon-smile"></i>
+                    <h1 class="slowNumber">30</h1>
+                    <p>AGE YEARS</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 num-item">
+                    <i class="icon-moon-three icon-embed2"></i>
+                    <h1 class="slowNumber">100000</h1>
+                    <p>CODE AMOUNT</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 num-item">
+                    <i class="icon-moon-three icon-checkbox-checked"></i>
+                    <h1 class="slowNumber">87600</h1>
+                    <p>WORK HOUR</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 num-item">
+                    <i class="icon-moon-three icon-trophy"></i>
+                    <h1 class="slowNumber">30</h1>
+                    <p>PROJECTS AMOUNT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- life 人生经历 -->
+    <div id="life" class="life">
+        <div class="container">
+            <div class="general-title text-color-two">
+                <h1>人生 <span>经历</span></h1>
+                <hr />
+                <p>热爱互联网，热爱技术，专注于前端技术开发和用户体验</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 life-item">
+                    <img class="img-circle" src="./img/team/02.jpg" alt="雨果学院">
+                    <h4>雨果学院</h4>
+                    <p>计算机科学与技术</p>
+                    <p>主要学习编程语言，后端技术，网站制作和开发，大学期间做过很多项目，很喜欢编程</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 life-item">
+                    <img class="img-circle" src="./img/team/01.jpg" alt="新东方">
+                    <h4>新东方</h4>
+                    <p>前端工程师</p>
+                    <p>主要负责前端网站技术</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 life-item">
+                    <img class="img-circle" src="./img/team/03.jpg" alt="时空科技">
+                    <h4>时空科技</h4>
+                    <p>后端工程师</p>
+                    <p>主要从事金币制造</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 life-item">
+                    <img class="img-circle" src="./img/team/04.jpg" alt="好未来">
+                    <h4>好未来</h4>
+                    <p>后端工程师</p>
+                    <p>主要从事儿童教育软件研发相关工作</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- evaluation 自我评价 -->
+    <div id="evaluation" class="evaluation">
+
+        <div class="container">
+            <div class="general-title text-color-one">
+                <h1>自我 <span>评价</span></h1>
+                <hr />
+            </div>
+            <!-- 设置轮播 -->
+            <div id="carousel-wrap" class="carousel slide">
+                <!-- 指示器 小圆点 -->
+                <ol class="carousel-indicators my-ol-style">
+                    <!-- data-target="#carousel-wrap" 选中链接元素块 -->
+                    <!-- class="active" 默认选中的图片 -->
+                    <li data-target="#carousel-wrap" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-wrap" data-slide-to="1"></li>
+                    <li data-target="#carousel-wrap" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播内容 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p>热爱学习，良好的团队合作精神，能迅速融入新的团队。</p>
+                        <p>易和人相处，拥有良好的亲和力 </p>
+                    </div>
+
+                    <div class="item">
+                        <p>问世间情为何物，</p>
+                        <p>直教人生死相许</p>
+                    </div>
+                    <div class="item">
+                        <p>但我的心每分每刻</p>
+                        <p>仍然被他占有</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact 联系方式 -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="general-title text-color-two">
+                <h1><span>联系</span> 方式</h1>
+                <hr />
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 tel">
+                    <i class="icon-moon-four icon-location"></i>
+                    <p>四川成都成华区</p>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 tel">
+                    <i class="icon-moon-four icon-envelop"></i>
+                    <p>1317237527@qq.com</p>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 tel">
+                    <i class="icon-moon-four icon-phone"></i>
+                    <p>18980291273</p>
+                </div>
+            </div>
+
+            <h4>给我发邮件</h4>
+
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-md-offset-2">
+                        <input type="text" id="name" name="username" placeholder="姓名" />
+                    </div>
+                    <div class="col-md-4  col-sm-12 col-xs-12">
+                        <input type="email" id="email" name="email" placeholder="邮箱" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+                        <textarea name="textmore" id="textmore" placeholder="内容" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="surebtn">
+                    <!-- <input type="bu't't" value="确认发送" /> -->
+                    <button>确认发送</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="container">
+            <div class="footerall">
+                <div>
+                    <p>Copyright &copy; 2020 作者：轩轩. 全栈工程师</p>
+                </div>
+                <div class="foot-icons">
+                    <a href="#"><i class="icon-moon-five icon-qq"></i></a>
+                    <a href="#"><i class="icon-moon-five icon-sina-weibo"></i></a>
+                    <a href="#"><i class="icon-moon-five icon-wechat"></i></a>
+                    <a href="#"><i class="icon-moon-five icon-renren"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- 引入js -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- isotope过滤插件 -->
+    <script src="./js/isotope.pkgd.js"></script>
+    <!-- slowNumber数字动画插件 -->
+    <script src="./js/slowNumber.js"></script>
+    <script src="./js/myindex.js"></script>
+</body>
+
+</html>

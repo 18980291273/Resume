@@ -1,0 +1,393 @@
+* { margin: 0;padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+.general-title {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        span {font-weight: bold;}
+    }
+    hr {
+        height: 3px;
+        width: 100px;
+        background-color: #F4D03F;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+.text-color-one {color: #dddddd;}
+.text-color-two { color: #555555;}
+header {
+    height: 100vh;
+    background: url('../img/intro-bg.jpg') center center no-repeat;
+}
+.my-nav-style {
+    padding: 20px 0;
+    transition: all .5s linear;
+}
+.my-nav-style button span {
+    color: white;
+    font-size: 16px;
+}
+.my-nav-style ul li a {color: white;}
+.my-nav-style ul li a:hover {
+    color: #F4D03F;
+    background-color: transparent;
+}
+.my-nav-black {
+    padding: 0;
+    background-color: black;
+}
+.header-title {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+        font-size: 5vw;
+        font-weight: bold;
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        span {
+            color: #F4D03F;
+        }
+    }
+    h3 {
+        font-size: 2vw;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+    }
+    div {
+        border: 2px solid gray;
+        display: inline-block;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        overflow: hidden;
+        &:hover span {
+            animation: bigger .8s linear infinite; //infinite设置动画无限循环
+        }
+        span {
+            display: inline-block;
+            line-height: 80px;
+        }
+    }
+}
+
+//下拉图标动画
+@keyframes bigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.3);}
+    100% {transform: scale(1);}
+}
+
+//资料
+.data-content {
+    background: linear-gradient(to top, #31353A, #5F6265);
+    color: #DDDDDD;
+    padding: 80px 0;
+    .container>.row>div {
+        height: 230px;
+        padding: 10px 0;
+        span {
+            display: inline-block;
+            height: 120px;
+            width: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(to top, #474B4F, #474B4F);
+            transition: all .3s linear;
+            &:hover {
+                transform: scale(1.2);
+                color: #F4D03F;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            color: #F4D03F;
+            font-size: 20px;
+        }
+    }
+}
+
+// 项目经验
+.experience {
+    background: linear-gradient(to top, #CCCCCC, #FEFEFE);
+    padding: 80px 0;
+    .container {
+        text-align: center;
+        padding-bottom: 20px;
+        &:first-child {
+            p {
+                font-size: 16px;
+            }
+            .btn-group a {
+                margin: 0 10px;
+                padding: 3px 9px;
+                border-radius: 5px;
+                color: #555555;
+                text-decoration: none;
+                &:hover {
+                    background-color: #F4D03F;
+                    cursor: pointer;
+
+                }
+            }
+            .btn-active {background-color: #F4D03F;}
+        }
+
+        .row {
+            .my-style {
+                overflow: hidden;
+                margin-top: 30px;
+                &:hover .images>img {transform: scale(1.3);}
+                &:hover .images>.science-text {z-index: 3;}
+                &:hover .images>.science-text h4 {transform: translateY(-10px);}
+                &:hover .images>.science-text i {transform: translateY(20px);}
+
+                .images {
+                    height: 260px;
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        transition: all .5s linear;
+                    }
+                    .science-text {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -5;
+                        top: 0;
+                        left: 0;
+                        color: white;
+                        background-color: rgba(2, 2, 2, .5);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h4 {
+                            font-size: 22px;
+                            transition: all .3s linear;
+                            &:hover {
+                                color: #F4D03F;
+                                cursor: pointer;
+                            }
+                        }
+                        i {
+                            font-size: 16px;
+                            transition: all .3s linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//专业技能
+.professional {
+    background: linear-gradient(to top, #C3A632, #F4D03F);
+    padding: 80px 0;
+
+    .professional-content {
+        img {width: 100%;}
+        .right-text {
+            display: flex;
+            flex-direction: column;
+            .right-item {
+                display: flex;
+                margin-bottom: 30px;
+                i {
+                    display: inline-block;
+                    padding: 3px;
+                    vertical-align: middle;
+                }
+                .item-text {
+                    margin-left: 15px;
+                    padding-right: 15px;
+                    p {color: #333333;}
+                }
+            }
+        }
+    }
+}
+
+//动态数字
+.dynamic-number {
+    padding: 60px 0;
+    background: linear-gradient(to top, #31353A, #6E7174);
+    text-align: center;
+    .container {
+        .row {
+            .num-item {
+                margin: 30px 0;
+                i { padding: 3px;}
+                h1 {
+                    color: #FFFFFF;
+                    font-weight: bolder;
+                    font-size: 35px;
+                    padding: 10px 0;
+                }
+                p {
+                    color: #AAAAAA;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+//人生经历
+.life {
+    background: linear-gradient(to top, #CCCCCC, #FEFEFE);
+    padding: 80px 0;
+    text-align: center;
+    .container {
+        .row {
+            .life-item {
+                color: #5A5A5A;
+                padding: 20px 0;
+                height: 290px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    padding: 4px;
+                    &:hover {animation: border .2s linear forwards;}
+                }
+                h4 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-top: 30px;
+                }
+                p {padding: 0 20px;}
+            }
+        }
+    }
+}
+
+// 自我评价
+.evaluation {
+    background: url('../img/testimonial-bg.jpg') no-repeat;
+    background-attachment: fixed; //设置背景图片不动
+    padding: 100px 0;
+    color: #DDDDDD;
+    text-align: center;
+    font-size: 16px;
+    .carousel {
+        .my-ol-style {bottom: -50px;}
+    }
+}
+
+//联系方式
+.contact {
+    padding: 80px 0;
+    background: linear-gradient(to top, #CCCCCC, #FEFEFE);
+    text-align: center;
+    .container {
+        .row {
+            .tel {
+                margin: 10px 0;
+                i {padding: 5px;}
+
+                p {margin-top: 10px;}
+            }
+        }
+        form {
+            margin-top: 30px;
+            input {
+                width: 100%;
+                height: 40px;
+                text-indent: 15px;
+                margin-top: 10px;
+            }
+            textarea {
+                width: 100%;
+                text-indent: 15px;
+                line-height: 40px;
+                height: 150px;
+                margin-top: 20px;
+            }
+            .surebtn {
+                margin-top: 20px;
+                button {
+                    width: 110px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #AAAAAA;
+                    color: #FFFFFF;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #F4D03F;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+//专业技能图片边框动画
+@keyframes border {
+    0% {background-color: rgba(245, 209, 63, 0);}
+    50% {background-color: rgba(245, 209, 63, .5);}
+    100% {background-color: rgba(245, 209, 63, 1);}
+}
+
+// 尾部
+footer {
+    background-color: #222222;
+    padding: 50px 0;
+    color: #FFFFFF;
+    .container {
+        .footerall {
+            display: flex;
+            justify-content: space-between;
+
+            .foot-icons {
+                a {
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    &:hover i {color: #F4D03F;}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    // 头部导航条的媒体查询
+    .my-nav-style {
+        background-color: black;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-title {
+        h1 {font-size: 30px;}
+    }
+
+    .contact {
+        form {padding: 0 10px;}
+    }
+    footer {
+        .container {
+            .footerall {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
